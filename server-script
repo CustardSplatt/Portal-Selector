@@ -1,0 +1,17 @@
+(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+		
+	data.showFinance = false;
+	var grAcc = new GlideRecord('customer_account');
+	grAcc.addEncodedQuery('u_product_typesLIKE0e168e76db883b04e7274662159619a1'); //Finance - CSM
+	grAcc.addQuery('sys_id', gs.getUser().getCompanyID());
+	grAcc.query();
+	
+	if (grAcc.getRowCount() > 0){
+		data.showFinance = true;
+	}
+	
+
+})();
