@@ -1,0 +1,17 @@
+api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.flexContainerClass = 'flexcontainer';	
+	$scope.cantiumLogoClass = 'logo';
+	$scope.hrLogoClass = 'logo-hr';
+	
+	
+	
+	if (!c.data.showFinance){
+		$scope.flexContainerClass = 'flexcontainer-2';		
+		$scope.cantiumLogoClass = 'logo-2';
+		$scope.hrLogoClass = 'logo-hr-2';
+	}
+	
+};
