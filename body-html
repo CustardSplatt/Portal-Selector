@@ -1,0 +1,24 @@
+<div style="text-align:center;padding-top: 15vh;">
+
+  <div class="{{flexContainerClass}}">
+      <div class="linkbox cantium" onclick="location.href='/csm';">
+          <div class="module">
+            <img class="{{cantiumLogoClass}}" ng-src="{{::portal.logo}}">
+              <p class="nav-text one-line">Click here to go to the IT Portal</p>	
+        </div>      	
+      </div>
+      <div class="linkbox kcc" ng-if="c.data.showFinance">
+          <div class="module" onclick="location.href='/fin';">
+            <img class="logo-kcc" src="kcc_logo_border_transparent_background.png"/>         	
+              <p class="nav-text two-line">Click here to go to the Finance Portal</p>
+          </div>      	
+      </div>
+      <div class="linkbox csg">
+          <div class="module" onclick="location.href='/hcp';">
+            <img class="{{hrLogoClass}}" src="hrconnect.png"/>
+              <p class="nav-text one-line">Click here to go to the HR Portal</p>
+          </div>      	
+      </div>
+
+  </div>
+</div>
